@@ -1,6 +1,7 @@
 import { defineConfig, presets } from 'sponsorkit'
 
 export default defineConfig({
+  providers: ['patreon'],
   tiers: [
     {
       title: 'Backers',
