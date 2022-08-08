@@ -1,7 +1,4 @@
-*.json
-!package.json
+sponsors*.json
+*.cache.json
 node_modules
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
 .env
