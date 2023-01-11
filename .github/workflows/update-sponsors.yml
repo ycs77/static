@@ -25,9 +25,7 @@ jobs:
           SPONSORKIT_PATREON_TOKEN: ${{ secrets.SPONSORS_TOKEN }}
 
       - name: Commit
-        uses: EndBug/add-and-commit@v4
+        uses: EndBug/add-and-commit@v9
         with:
           message: 'Update sponsors'
           add: 'sponsors.*'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
