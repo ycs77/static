@@ -11,16 +11,17 @@ jobs:
   update-sponsors:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 20
+          cache: yarn
 
       - run: yarn
 
       - name: Update sponsors
-        run: npm run build
+        run: yarn build
         env:
           SPONSORKIT_PATREON_TOKEN: ${{ secrets.SPONSORS_TOKEN }}
 
