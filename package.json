@@ -1,8 +1,10 @@
 {
+  "type": "module",
   "scripts": {
-    "build": "npx sponsorkit -w 800 --dir . && npx sponsorkit -w 1300 --name sponsors.wide --dir ."
+    "build": "sponsorkit"
   },
   "devDependencies": {
-    "sponsorkit": "^0.5.3"
+    "@types/node": "^20.0.0",
+    "sponsorkit": "^0.15.4"
   }
 }
